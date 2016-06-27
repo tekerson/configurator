@@ -1,0 +1,26 @@
+{
+  "name": "@configurator/configurator",
+  "version": "1.0.0",
+  "description": "DSL to modify configurations",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tape '**/*.spec.js' | faucet",
+    "test:watch": "nodemon --quiet --watch '.' --exec 'npm run test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tekerson/configurator.git"
+  },
+  "author": "Brenton Alker <brenton@tekerson.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "jsverify": "^0.7.1",
+    "nodemon": "^1.9.2",
+    "tape": "^4.6.0",
+    "tape-jsverify": "^1.0.0"
+  },
+  "dependencies": {
+    "daggy": "0.0.1"
+  }
+}
